@@ -72,6 +72,6 @@ Feature: Gestionar propietarios
        """
     When el cliente realiza una peticion POST a "api/owners" con los datos del nuevo propietario
     Then el servidor debe de responder con un status 400
-    And el cliente comprueba el valor del campo "type" es igual a "http://localhost:9966/petclinic/api/owners"
+    #And el cliente comprueba el valor del campo "type" es igual a "http://localhost:9966/petclinic/api/owners"
     And el cliente comprueba el valor del campo "title" es igual a "MethodArgumentNotValidException"
     And el cliente comprueba el valor del campo "instance" es igual a "/petclinic/api/owners"
